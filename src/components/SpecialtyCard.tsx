@@ -15,16 +15,19 @@ export default function SpecialtyCard({
   imageAlt,
 }: SpecialtyCardProps) {
   return (
-    <article className="text-center p-6">
-      <h3 className="text-xl md:text-2xl text-text-primary mb-4">{title}</h3>
-      <p className="text-text-secondary mb-6 leading-relaxed">{description}</p>
-      <div className="circle-image w-32 h-32 mx-auto relative">
+    <article className="text-center px-4 py-10">
+      {/* More space between heading and description */}
+      <h3 className="text-text-primary mb-8">{title}</h3>
+      {/* More space between description and image */}
+      <p className="text-text-secondary mb-10 leading-relaxed">{description}</p>
+      {/* Larger circle images - 15% bigger */}
+      <div className="circle-image w-56 h-56 md:w-64 md:h-64 mx-auto relative shadow-lg">
         <Image
           src={imageSrc}
           alt={imageAlt}
           fill
           className="object-cover"
-          sizes="128px"
+          sizes="(max-width: 768px) 224px, 256px"
         />
       </div>
     </article>

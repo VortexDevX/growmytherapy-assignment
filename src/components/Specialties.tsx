@@ -37,12 +37,13 @@ export default function Specialties() {
       <div className="container mx-auto">
         <h2
           id="specialties-heading"
-          className="text-center text-text-primary mb-12"
+          className="text-center text-text-primary mb-16"
         >
           My Specialties
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+        {/* More gap between cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
           {specialties.map((specialty) => (
             <SpecialtyCard
               key={specialty.title}

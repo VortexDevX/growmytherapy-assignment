@@ -27,8 +27,8 @@ export default function ScrollAnimation({
         }
       },
       {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px",
+        threshold: 0.15, // Trigger when 15% visible
+        rootMargin: "0px 0px -100px 0px", // Trigger a bit before fully in view
       },
     );
 

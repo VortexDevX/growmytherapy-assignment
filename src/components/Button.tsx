@@ -30,7 +30,6 @@ export default function Button({
     return (
       <a href={href} className={combinedClasses} aria-label={ariaLabel}>
         {children}
-        <span aria-hidden="true">→</span>
       </a>
     );
   }
@@ -42,7 +41,6 @@ export default function Button({
       aria-label={ariaLabel}
     >
       {children}
-      <span aria-hidden="true">→</span>
     </button>
   );
 }

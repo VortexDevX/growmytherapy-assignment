@@ -18,7 +18,7 @@ function AccordionItem({
   return (
     <div className="border-b border-border-light">
       <button
-        className="w-full py-5 flex items-center justify-between text-left"
+        className="w-full py-5 flex items-center justify-between text-left cursor-pointer hover:bg-secondary/50 transition-colors"
         onClick={onToggle}
         aria-expanded={isOpen}
       >
@@ -77,14 +77,14 @@ export default function FAQ() {
 
   return (
     <section
-      className="section bg-background-alt"
+      className="section bg-secondary py-20 md:py-28"
       aria-labelledby="faq-heading"
     >
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          {/* Circular Image */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          {/* Larger Circular Image */}
           <div className="flex justify-center lg:justify-start">
-            <div className="circle-image w-64 h-64 md:w-80 md:h-80 relative">
+            <div className="circle-image w-72 h-72 md:w-96 md:h-96 relative shadow-lg">
               <img
                 src="/images/faq-calm.jpg"
                 alt="Peaceful natural setting representing calm and reflection"

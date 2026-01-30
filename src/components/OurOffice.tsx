@@ -3,14 +3,17 @@ import Image from "next/image";
 
 export default function OurOffice() {
   return (
-    <section className="section bg-secondary" aria-labelledby="office-heading">
+    <section
+      className="section bg-background-alt"
+      aria-labelledby="office-heading"
+    >
       <div className="container mx-auto">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 id="office-heading" className="text-text-primary mb-4">
+        <div className="text-center mb-16">
+          <h2 id="office-heading" className="text-text-primary mb-6">
             A Calm Space for Healing
           </h2>
-          <p className="text-text-secondary max-w-2xl mx-auto text-lg">
+          <p className="text-text-secondary max-w-2xl mx-auto text-lg leading-relaxed">
             My Santa Monica office is designed to feel calm and grounding, with
             natural light and a comfortable, uncluttered environment. Clients
             often share that the space itself helps them feel more at ease when
@@ -18,34 +21,34 @@ export default function OurOffice() {
           </p>
         </div>
 
-        {/* Office Images Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          <div className="aspect-[4/3] relative rounded-lg overflow-hidden">
+        {/* Office Images Grid - Larger corner radius for softer look */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          <div className="aspect-[4/3] relative rounded-[60px] overflow-hidden shadow-lg">
             <Image
               src="/images/office1.jpeg"
               alt="Therapy office with comfortable seating and natural light in Santa Monica"
               fill
-              className="object-cover hover:scale-105 transition-transform duration-500"
+              className="object-cover hover:scale-105 transition-transform duration-700"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
-          <div className="aspect-[4/3] relative rounded-lg overflow-hidden">
+          <div className="aspect-[4/3] relative rounded-[60px] overflow-hidden shadow-lg">
             <Image
               src="/images/office2.jpeg"
               alt="Welcoming therapy space with calming decor and private atmosphere"
               fill
-              className="object-cover hover:scale-105 transition-transform duration-500"
+              className="object-cover hover:scale-105 transition-transform duration-700"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
         </div>
 
         {/* Additional Info */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div className="p-6">
-            <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+          <div className="p-8">
+            <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-primary/10 flex items-center justify-center">
               <svg
-                className="w-6 h-6 text-primary"
+                className="w-7 h-7 text-primary"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -65,19 +68,19 @@ export default function OurOffice() {
                 />
               </svg>
             </div>
-            <h3 className="text-lg font-serif text-text-primary mb-2">
+            <h3 className="text-xl font-serif text-text-primary mb-3">
               Santa Monica, CA
             </h3>
-            <p className="text-text-secondary text-sm">
+            <p className="text-text-secondary">
               Conveniently located in Santa Monica with easy access and parking
               available.
             </p>
           </div>
 
-          <div className="p-6">
-            <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
+          <div className="p-8">
+            <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-primary/10 flex items-center justify-center">
               <svg
-                className="w-6 h-6 text-primary"
+                className="w-7 h-7 text-primary"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -91,19 +94,19 @@ export default function OurOffice() {
                 />
               </svg>
             </div>
-            <h3 className="text-lg font-serif text-text-primary mb-2">
+            <h3 className="text-xl font-serif text-text-primary mb-3">
               Privacy & Comfort
             </h3>
-            <p className="text-text-secondary text-sm">
+            <p className="text-text-secondary">
               A quiet, private space where you can feel safe to explore and
               reflect.
             </p>
           </div>
 
-          <div className="p-6">
-            <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">
+          <div className="p-8">
+            <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-primary/10 flex items-center justify-center">
               <svg
-                className="w-6 h-6 text-primary"
+                className="w-7 h-7 text-primary"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -117,10 +120,10 @@ export default function OurOffice() {
                 />
               </svg>
             </div>
-            <h3 className="text-lg font-serif text-text-primary mb-2">
+            <h3 className="text-xl font-serif text-text-primary mb-3">
               In-Person & Telehealth
             </h3>
-            <p className="text-text-secondary text-sm">
+            <p className="text-text-secondary">
               Choose between in-person sessions or secure video therapy from
               anywhere in California.
             </p>

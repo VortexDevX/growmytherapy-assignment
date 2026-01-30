@@ -8,7 +8,7 @@ const painPoints = [
   "Feeling emotionally on edge or easily overwhelmed",
   "A sense that you're always bracing for something to go wrong",
   "Past experiences affecting your relationships or confidence",
-  'Feeling "functional" but quietly struggling inside',
+  '"Feeling functional" but quietly struggling inside',
 ];
 
 export default function PainPoints() {
@@ -18,10 +18,10 @@ export default function PainPoints() {
       aria-labelledby="painpoints-heading"
     >
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Image */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Image - Large arch shape */}
           <div className="flex justify-center lg:justify-start">
-            <div className="w-full max-w-md aspect-[3/4] relative rounded-lg overflow-hidden">
+            <div className="arch-shape w-full max-w-md aspect-[3/4] relative shadow-lg">
               <Image
                 src="/images/hope-nature.jpg"
                 alt="Person looking up towards the sky, representing hope and possibility"
@@ -34,20 +34,22 @@ export default function PainPoints() {
 
           {/* Text Content */}
           <div>
-            <h2 id="painpoints-heading" className="text-text-primary mb-6">
+            {/* More gap between heading and bullet list */}
+            <h2 id="painpoints-heading" className="text-text-primary mb-10">
               You don&apos;t have to carry this alone
             </h2>
-            <p className="text-text-secondary mb-6 text-lg">
+            <p className="text-text-secondary mb-8 text-lg">
               If you&apos;re experiencing any of these, there&apos;s hope:
             </p>
-            <ul className="space-y-4" role="list">
+            {/* Increased line-height for bullets */}
+            <ul className="space-y-6" role="list">
               {painPoints.map((point, index) => (
                 <li
                   key={index}
-                  className="flex items-start gap-3 text-text-secondary"
+                  className="flex items-start gap-4 text-text-secondary leading-relaxed"
                 >
                   <span
-                    className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"
+                    className="w-2 h-2 rounded-full bg-primary mt-2.5 flex-shrink-0"
                     aria-hidden="true"
                   />
                   <span>{point}</span>
