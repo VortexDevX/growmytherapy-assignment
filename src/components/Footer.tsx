@@ -50,12 +50,9 @@ export default function Footer() {
             <nav aria-label="Footer navigation">
               <ul className="text-text-secondary text-md space-y-1">
                 <li>
-                  <Link
-                    href="/"
-                    className="hover:text-primary transition-colors"
-                  >
+                  <a href="/" className="hover:text-primary transition-colors">
                     Home
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <a

@@ -42,12 +42,12 @@ export default function Header() {
         className="container mx-auto px-6 py-4 flex items-center justify-between"
         aria-label="Main navigation"
       >
-        <Link
+        <a
           href="/"
           className="font-serif text-xl md:text-2xl text-text-primary font-medium hover:opacity-80 transition-opacity"
         >
           Dr. Maya Reynolds
-        </Link>
+        </a>
 
         <div className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
