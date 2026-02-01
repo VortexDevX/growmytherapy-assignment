@@ -34,11 +34,11 @@ export default function Introduction() {
               develop practical tools to feel more grounded.
             </p>
             <Button
-              href="#contact"
+              href="#services"
               variant="outline"
-              ariaLabel="Get in touch to learn more about therapy services"
+              ariaLabel="Learn how Dr. Maya Reynolds can help"
             >
-              GET IN TOUCH
+              HOW I CAN HELP
             </Button>
           </div>
         </div>
