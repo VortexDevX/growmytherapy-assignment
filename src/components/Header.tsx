@@ -97,28 +97,30 @@ export default function Header() {
         </button>
       </nav>
 
-      {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div
-          id="mobile-menu"
-          className="md:hidden absolute top-full left-0 right-0 bg-secondary shadow-lg"
-          role="menu"
-        >
-          <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-text-secondary hover:text-primary transition-colors font-medium text-sm uppercase tracking-wider py-2"
-                onClick={() => setIsMenuOpen(false)}
-                role="menuitem"
-              >
-                {item.label}
-              </a>
-            ))}
-          </div>
+      {/* Mobile Menu with slide animation */}
+      <div
+        id="mobile-menu"
+        className={`md:hidden absolute top-full left-0 right-0 bg-secondary shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${
+          isMenuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
+        }`}
+        role="menu"
+        aria-hidden={!isMenuOpen}
+      >
+        <div className="container mx-auto px-6 py-6 flex flex-col gap-5">
+          {navItems.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className="text-text-secondary hover:text-primary transition-colors font-medium text-base uppercase tracking-wider py-3"
+              onClick={() => setIsMenuOpen(false)}
+              role="menuitem"
+              tabIndex={isMenuOpen ? 0 : -1}
+            >
+              {item.label}
+            </a>
+          ))}
         </div>
-      )}
+      </div>
     </header>
   );
 }

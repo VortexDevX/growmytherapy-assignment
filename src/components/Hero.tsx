@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
           {/* Image - Large Arch Shape */}
           <div className="order-2 lg:order-1 flex justify-center">
-            <div className="arch-shape w-full max-w-lg aspect-[3/4] relative shadow-2xl">
+            <div className="arch-shape w-full max-w-xl aspect-[3/4] relative shadow-2xl">
               <Image
                 src="/images/hero-calm.jpg"
                 alt="Peaceful therapy environment with natural light"
@@ -29,13 +29,11 @@ export default function Hero() {
             <h1 id="hero-heading" className="text-text-primary mb-8">
               Santa Monica Psychologist for Anxiety, Trauma & Burnout
             </h1>
-            {/* Narrower max-width for better readability */}
-            <p className="text-lg md:text-xl text-text-secondary mb-10 max-w-md mx-auto lg:mx-0 leading-relaxed">
-              You may look like you&apos;re managing on the outside, but inside
-              feel exhausted, anxious, or constantly on edge. I offer a calm,
-              collaborative space for adults in Santa Monica to work through
-              anxiety, trauma, and burnout and begin feeling more grounded,
-              clear, and connected to themselves again.
+            {/* Larger subheading, concise content */}
+            <p className="text-xl md:text-2xl text-text-secondary mb-10 max-w-md mx-auto lg:mx-0 leading-relaxed">
+              I offer a calm, collaborative space for adults in Santa Monica to
+              work through anxiety, trauma, and burnout—and begin feeling more
+              grounded of themselves again.
             </p>
             <div>
               <Button

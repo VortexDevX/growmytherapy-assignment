@@ -5,7 +5,7 @@ export default function FinalCTA() {
   return (
     <section
       id="contact"
-      className="section bg-primary py-20 md:py-28"
+      className="section bg-primary py-24 md:py-32"
       aria-labelledby="cta-heading"
     >
       <div className="container mx-auto text-center">

@@ -16,23 +16,19 @@ export default function About() {
             <h2 id="about-heading" className="text-text-primary mb-8">
               Hi, I&apos;m Dr. Maya
             </h2>
-            <p className="text-text-secondary mb-5">
+            <p className="text-lg text-text-secondary mb-5 leading-relaxed">
               I&apos;m a licensed clinical psychologist based in Santa Monica,
-              California, offering therapy for adults who feel overwhelmed by
-              anxiety, stress, or the lingering effects of past experiences.
+              California, offering therapy for adults overwhelmed by anxiety,
+              stress, or past experiences.
             </p>
-            <p className="text-text-secondary mb-5">
-              I take a warm, collaborative, and grounded approach to therapy.
-              Sessions are structured enough to feel supportive, while still
-              leaving space for reflection and depth. I integrate evidence-based
-              methods such as cognitive-behavioral therapy (CBT), EMDR,
-              mindfulness-based practices, and body-oriented techniques.
+            <p className="text-lg text-text-secondary mb-5 leading-relaxed">
+              I take a warm, collaborative approach to therapy, integrating CBT,
+              EMDR, and mindfulness-based practices. Sessions are structured yet
+              leave space for reflection and depth.
             </p>
-            <p className="text-text-secondary mb-10">
-              I believe therapy works best when clients feel respected,
-              understood, and actively involved in the process. My goal is not
-              just symptom relief, but helping you develop insight, resilience,
-              and a stronger relationship with yourself over time.
+            <p className="text-lg text-text-secondary mb-10 leading-relaxed">
+              My goal is not just symptom relief, but helping you develop
+              insight, resilience, and a stronger relationship with yourself.
             </p>
             <Button
               href="#contact"

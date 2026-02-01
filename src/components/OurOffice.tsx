@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function OurOffice() {
   return (
     <section
-      className="section bg-background-alt"
+      className="section bg-background-alt py-20 md:py-28"
       aria-labelledby="office-heading"
     >
       <div className="container mx-auto">
@@ -26,7 +26,7 @@ export default function OurOffice() {
           <div className="aspect-[4/3] relative rounded-[60px] overflow-hidden shadow-lg">
             <Image
               src="/images/office1.jpeg"
-              alt="Therapy office with comfortable seating and natural light in Santa Monica"
+              alt="Dr. Maya Reynolds therapy office in Santa Monica with comfortable seating and natural light"
               fill
               className="object-cover hover:scale-105 transition-transform duration-700"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -35,7 +35,7 @@ export default function OurOffice() {
           <div className="aspect-[4/3] relative rounded-[60px] overflow-hidden shadow-lg">
             <Image
               src="/images/office2.jpeg"
-              alt="Welcoming therapy space with calming decor and private atmosphere"
+              alt="Private counseling room at Dr. Maya Reynolds Santa Monica psychology practice"
               fill
               className="object-cover hover:scale-105 transition-transform duration-700"
               sizes="(max-width: 768px) 100vw, 50vw"

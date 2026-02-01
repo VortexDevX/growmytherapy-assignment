@@ -3,18 +3,18 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-background py-12 px-6 border-t border-border-light">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-background py-16 px-6">
+      <div className="container mx-auto max-w-5xl">
+        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-8 text-center md:text-left">
           {/* Contact Info */}
           <div>
             <h3 className="font-serif text-lg text-text-primary mb-4">
               Dr. Maya Reynolds, PsyD
             </h3>
-            <address className="not-italic text-text-secondary text-sm space-y-2">
+            <address className="not-italic text-text-secondary text-sm space-y-1">
               <p>123th Street 45 W</p>
               <p>Santa Monica, CA 90401</p>
-              <p className="pt-2">
+              <p className="pt-3">
                 <a
                   href="mailto:contact@drmayareynolds.com"
                   className="hover:text-primary transition-colors"
@@ -38,22 +38,20 @@ export default function Footer() {
             <h3 className="font-serif text-lg text-text-primary mb-4">
               Office Hours
             </h3>
-            <div className="text-text-secondary text-sm space-y-2">
+            <div className="text-text-secondary text-sm space-y-1">
               <p>Monday – Friday</p>
               <p>9:00 AM – 6:00 PM</p>
-              <p className="pt-2 text-text-light">
+              <p className="pt-3 text-text-light text-xs">
                 Telehealth available for California residents
               </p>
             </div>
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="font-serif text-lg text-text-primary mb-4">
-              Quick Links
-            </h3>
+          <div className="md:text-right">
+            <h3 className="font-serif text-lg text-text-primary mb-4">Links</h3>
             <nav aria-label="Footer navigation">
-              <ul className="text-text-secondary text-sm space-y-2">
+              <ul className="text-text-secondary text-md space-y-1">
                 <li>
                   <Link
                     href="/"
@@ -91,15 +89,17 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="mt-12 pt-8 border-t border-border-light text-center">
-          <p className="text-text-light text-sm">
-            © {new Date().getFullYear()} Dr. Maya Reynolds, PsyD. All rights
-            reserved.
-          </p>
-          <p className="text-text-light text-xs mt-2">
-            Licensed Clinical Psychologist in California
-          </p>
+        {/* Divider */}
+        <div className="border-t border-border-light mt-12 pt-8">
+          <div className="text-center">
+            <p className="text-text-light text-sm">
+              © {new Date().getFullYear()} Dr. Maya Reynolds, PsyD. All rights
+              reserved.
+            </p>
+            <p className="text-text-light text-xs mt-2">
+              Licensed Clinical Psychologist in California
+            </p>
+          </div>
         </div>
       </div>
     </footer>
