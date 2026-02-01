@@ -25,6 +25,7 @@ export default function SpecialtyCard({
           fill
           className="object-cover"
           sizes="(max-width: 640px) 192px, (max-width: 768px) 224px, 224px"
+          quality={70}
         />
       </div>
     </article>
