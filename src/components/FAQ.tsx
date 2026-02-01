@@ -54,7 +54,7 @@ const faqs = [
   {
     question: "What can I expect in our first session?",
     answer:
-      "Our first session is an opportunity for us to get to know each other. I'll ask about what brings you to therapy, your background, and what you're hoping to work on. It's also a chance for you to ask questions and see if we feel like a good fit. There's no pressure—the first session is about understanding your needs and goals.",
+      "Our first session is an opportunity for us to get to know each other. I'll ask about what brings you to therapy, your background, and what you're hoping to work on. It's also a chance for you to ask questions and see if we feel like a good fit. There's no pressure. The first session is about understanding your needs and goals.",
   },
   {
     question: "Do you offer telehealth sessions?",

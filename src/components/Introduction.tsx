@@ -27,9 +27,9 @@ export default function Introduction() {
               Find relief from anxiety and overwhelm
             </h2>
             <p className="text-text-secondary mb-10 leading-relaxed">
-              Many of the people I work with are high-achieving and
-              self-aware—but internally feel exhausted, stuck in overthinking,
-              or emotionally on edge. If this sounds familiar, you&apos;re not
+              Many of the people I work with are high-achieving and self-aware,
+              but internally feel exhausted, stuck in overthinking, or
+              emotionally on edge. If this sounds familiar, you&apos;re not
               alone. Therapy can help you understand what&apos;s happening and
               develop practical tools to feel more grounded.
             </p>

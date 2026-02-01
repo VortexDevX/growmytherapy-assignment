@@ -29,7 +29,7 @@ export default function Hero() {
             </h1>
             <p className="text-xl md:text-2xl text-text-secondary mb-10 max-w-md mx-auto lg:mx-0 leading-relaxed">
               I offer a calm, collaborative space for adults in Santa Monica to
-              work through anxiety, trauma, and burnout—and begin feeling more
+              work through anxiety, trauma, and burnout, and begin feeling more
               grounded of themselves again.
             </p>
             <div>
