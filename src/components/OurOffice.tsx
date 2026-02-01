@@ -8,7 +8,6 @@ export default function OurOffice() {
       aria-labelledby="office-heading"
     >
       <div className="container mx-auto">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 id="office-heading" className="text-text-primary mb-6">
             A Calm Space for Healing
@@ -21,9 +20,8 @@ export default function OurOffice() {
           </p>
         </div>
 
-        {/* Office Images Grid - Larger corner radius for softer look */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          <div className="aspect-[4/3] relative rounded-[60px] overflow-hidden shadow-lg">
+          <div className="aspect-4/3 relative rounded-[60px] overflow-hidden shadow-lg">
             <Image
               src="/images/office1.jpeg"
               alt="Dr. Maya Reynolds therapy office in Santa Monica with comfortable seating and natural light"
@@ -32,7 +30,7 @@ export default function OurOffice() {
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
-          <div className="aspect-[4/3] relative rounded-[60px] overflow-hidden shadow-lg">
+          <div className="aspect-4/3 relative rounded-[60px] overflow-hidden shadow-lg">
             <Image
               src="/images/office2.jpeg"
               alt="Private counseling room at Dr. Maya Reynolds Santa Monica psychology practice"
@@ -43,7 +41,6 @@ export default function OurOffice() {
           </div>
         </div>
 
-        {/* Additional Info */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
           <div className="p-8">
             <div className="w-14 h-14 mx-auto mb-5 rounded-full bg-primary/10 flex items-center justify-center">

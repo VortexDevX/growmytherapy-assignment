@@ -10,9 +10,8 @@ export default function Introduction() {
     >
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Image - Large rounded shape like Lilac (first on mobile) */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-            <div className="w-full max-w-md aspect-[4/3] relative rounded-[60px] overflow-hidden shadow-lg">
+            <div className="w-full max-w-lg aspect-4/3 relative rounded-[60px] overflow-hidden shadow-lg">
               <Image
                 src="/images/calm-workspace.jpg"
                 alt="A calm, organized workspace with natural elements"
@@ -23,7 +22,6 @@ export default function Introduction() {
             </div>
           </div>
 
-          {/* Text Content (second on mobile) */}
           <div className="order-2 lg:order-1 max-w-lg text-center lg:text-left mx-auto lg:mx-0">
             <h2 id="intro-heading" className="text-text-primary mb-8">
               Find relief from anxiety and overwhelm
@@ -40,7 +38,7 @@ export default function Introduction() {
               variant="outline"
               ariaLabel="Get in touch to learn more about therapy services"
             >
-              Get In Touch
+              GET IN TOUCH
             </Button>
           </div>
         </div>

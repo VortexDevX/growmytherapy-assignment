@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import Hero from "@/components/Hero";
 import Introduction from "@/components/Introduction";
 import Specialties from "@/components/Specialties";
@@ -11,6 +12,10 @@ import FinalCTA from "@/components/FinalCTA";
 import ScrollAnimation from "@/components/ScrollAnimation";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       {/* Hero doesn't need scroll animation - it's above the fold */}

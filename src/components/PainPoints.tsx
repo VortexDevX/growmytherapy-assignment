@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 const painPoints = [
@@ -19,9 +18,8 @@ export default function PainPoints() {
     >
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Image - Large arch shape (first on mobile) */}
           <div className="order-1 flex justify-center lg:justify-start">
-            <div className="arch-shape w-full max-w-md aspect-[3/4] relative shadow-lg">
+            <div className="arch-shape w-full max-w-lg aspect-3/4 relative shadow-lg">
               <Image
                 src="/images/hope-nature.jpg"
                 alt="Person looking up towards the sky, representing hope and possibility"
@@ -32,16 +30,13 @@ export default function PainPoints() {
             </div>
           </div>
 
-          {/* Text Content (second on mobile) */}
           <div className="order-2">
-            {/* More gap between heading and bullet list */}
             <h2 id="painpoints-heading" className="text-text-primary mb-10">
               You don&apos;t have to carry this alone
             </h2>
             <p className="text-text-secondary mb-8 text-lg leading-relaxed">
               If you&apos;re experiencing any of these, there&apos;s hope:
             </p>
-            {/* Increased line-height for bullets */}
             <ul className="space-y-6" role="list">
               {painPoints.map((point, index) => (
                 <li
@@ -49,7 +44,7 @@ export default function PainPoints() {
                   className="flex items-start gap-4 text-text-secondary leading-relaxed"
                 >
                   <span
-                    className="w-2 h-2 rounded-full bg-primary mt-2.5 flex-shrink-0"
+                    className="w-2 h-2 rounded-full bg-primary mt-2.5 shrink-0"
                     aria-hidden="true"
                   />
                   <span>{point}</span>

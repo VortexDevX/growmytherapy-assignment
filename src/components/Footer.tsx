@@ -6,7 +6,6 @@ export default function Footer() {
     <footer className="bg-background py-16 px-6">
       <div className="container mx-auto max-w-5xl">
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-8 text-center md:text-left">
-          {/* Contact Info */}
           <div>
             <h3 className="font-serif text-lg text-text-primary mb-4">
               Dr. Maya Reynolds, PsyD
@@ -33,7 +32,6 @@ export default function Footer() {
             </address>
           </div>
 
-          {/* Office Hours */}
           <div>
             <h3 className="font-serif text-lg text-text-primary mb-4">
               Office Hours
@@ -47,7 +45,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div className="md:text-right">
             <h3 className="font-serif text-lg text-text-primary mb-4">Links</h3>
             <nav aria-label="Footer navigation">
@@ -89,7 +86,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
         <div className="border-t border-border-light mt-12 pt-8">
           <div className="text-center">
             <p className="text-text-light text-sm">

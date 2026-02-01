@@ -27,9 +27,9 @@ export default function Header() {
   }, [lastScrollY]);
 
   const navItems = [
-    { label: "About", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Contact", href: "#contact" },
+    { label: "ABOUT", href: "#about" },
+    { label: "SERVICES", href: "#services" },
+    { label: "CONTACT", href: "#contact" },
   ];
 
   return (
@@ -42,7 +42,6 @@ export default function Header() {
         className="container mx-auto px-6 py-4 flex items-center justify-between"
         aria-label="Main navigation"
       >
-        {/* Logo */}
         <Link
           href="/"
           className="font-serif text-xl md:text-2xl text-text-primary font-medium hover:opacity-80 transition-opacity"
@@ -50,7 +49,6 @@ export default function Header() {
           Dr. Maya Reynolds
         </Link>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
             <a
@@ -63,7 +61,6 @@ export default function Header() {
           ))}
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden p-2 text-text-primary"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -97,7 +94,6 @@ export default function Header() {
         </button>
       </nav>
 
-      {/* Mobile Menu with slide animation */}
       <div
         id="mobile-menu"
         className={`md:hidden absolute top-full left-0 right-0 bg-secondary shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${

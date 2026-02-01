@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 
 interface AccordionItemProps {
   question: string;
@@ -24,7 +25,7 @@ function AccordionItem({
       >
         <span className="text-text-primary font-medium pr-4">{question}</span>
         <span
-          className={`text-primary transition-transform duration-300 flex-shrink-0 ${isOpen ? "rotate-45" : ""}`}
+          className={`text-primary transition-transform duration-300 shrink-0 ${isOpen ? "rotate-45" : ""}`}
           aria-hidden="true"
         >
           <svg
@@ -82,18 +83,18 @@ export default function FAQ() {
     >
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          {/* Larger Circular Image */}
           <div className="flex justify-center lg:justify-start">
             <div className="circle-image w-72 h-72 md:w-96 md:h-96 relative shadow-lg">
-              <img
+              <Image
                 src="/images/faq-calm.jpg"
                 alt="Peaceful natural setting representing calm and reflection"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 288px, 384px"
               />
             </div>
           </div>
 
-          {/* FAQ Accordion */}
           <div>
             <h2 id="faq-heading" className="text-text-primary mb-8">
               FAQs

@@ -17,6 +17,7 @@ export default function ScrollAnimation({
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const element = ref.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -27,18 +28,18 @@ export default function ScrollAnimation({
         }
       },
       {
-        threshold: 0.15, // Trigger when 15% visible
-        rootMargin: "0px 0px -100px 0px", // Trigger a bit before fully in view
+        threshold: 0.15,
+        rootMargin: "0px 0px -100px 0px",
       },
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (element) {
+      observer.observe(element);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (element) {
+        observer.unobserve(element);
       }
     };
   }, [delay]);
